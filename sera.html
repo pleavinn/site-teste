@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            animation: backgroundAnimation 5s infinite;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: rgb(255, 0, 0); }
+            25% { background-color: rgb(0, 255, 0); }
+            50% { background-color: rgb(0, 0, 255); }
+            75% { background-color: rgb(255, 255, 0); }
+            100% { background-color: rgb(255, 0, 255); }
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .champion-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* LGBT Flag CSS */
+        .lgbt-flag {
+            background: linear-gradient(to right, #FF0018, #FFA52C, #FFFF41, #008018, #0000F9, #86007D);
+            background-size: 100% 6px;
+            background-position: 0 0;
+            background-repeat: repeat-x;
+            border-radius: 5px;
+            height: 6px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="30" placeholder="Digite seu nome." required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" size="30" placeholder="Digite seu sobrenome." required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" size="60" placeholder="Digite seu endereço." required>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label for="login">Login:</label>
+            <input type="text" name="login" id="login" size="30" placeholder="Digite seu login." required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" size="30" placeholder="Digite sua senha." required>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label>Gênero:</label>
+            <label for="genero-m">
+                <input type="radio" name="genero" id="genero-m" value="M">Masculino
+            </label>
+            <label for="genero-f">
+                <input type="radio" name="genero" id="genero-f" value="F">Feminino
+            </label>
+            <label for="genero-nb">
+                <input type="radio" name="genero" id="genero-nb" value="N">Não-binário
+            </label>
+            <label for="genero-o">
+                <input type="radio" name="genero" id="genero-o" value="O">Outro
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Estado Civil:</label>
+            <label for="estCivil-c">
+                <input type="radio" name="estCivil" id="estCivil-c" value="C">Casado
+            </label>
+            <label for="estCivil-s">
+                <input type="radio" name="estCivil" id="estCivil-s" value="S">Solteiro
+            </label>
+            <label for="estCivil-v">
+                <input type="radio" name="estCivil" id="estCivil-v" value="V">Viúvo
+            </label>
+            <label for="estCivil-d">
+                <input type="radio" name="estCivil" id="estCivil-d" value="D">Divorciado
+            </label>
+            <label for="estCivil-a">
+                <input type="radio" name="estCivil" id="estCivil-a" value="A">Amasiado
+            </label>
+            <label for="estCivil-o">
+                <input type="radio" name="estCivil" id="estCivil-o" value="O">Outro
+            </label>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label>Champion pool:</label>
+            <label class="champion-label" for="champ01">
+                <input type="checkbox" name="champion" id="champ01" value="Aatrox">Aatrox
+            </label>
+            <label class="champion-label" for="champ02">
+                <input type="checkbox" name="champion" id="champ02" value="Ahri">Ahri
+            </label>
+            <label class="champion-label" for="champ03">
+                <input type="checkbox" name="champion" id="champ03" value="Akali">Akali
+            </label>
+            <label class="champion-label" for="champ04">
+                <input type="checkbox" name="champion" id="champ04" value="Alistar">Alistar
+            </label>
+            <label class="champion-label" for="champ05">
+                <input type="checkbox" name="champion" id="champ05" value="Amumu">Amumu
+            </label>
+            <label class="champion-label" for="champ06">
+                <input type="checkbox" name="champion" id="champ06" value="Anivia">Anivia
+            </label>
+            <label class="champion-label" for="champ07">
+                <input type="checkbox" name="champion" id="champ07" value="Annie">Annie
+            </label>
+            <label class="champion-label" for="champ08">
+                <input type="checkbox" name="champion" id="champ08" value="Aphelios">Aphelios
+            </label>
+            <label class="champion-label" for="champ09">
+                <input type="checkbox" name="champion" id="champ09" value="Ashe">Ashe
+            </label>
+            <label class="champion-label" for="champ10">
+                <input type="checkbox" name="champion" id="champ10" value="Aurelion Sol">Aurelion Sol
+            </label>
+            <label class="champion-label" for="champ11">
+                <input type="checkbox" name="champion" id="champ11" value="Azir">Azir
+            </label>
+            <label class="champion-label" for="champ12">
+                <input type="checkbox" name="champion" id="champ12" value="Bard">Bard
+            </label>
+            <label class="champion-label" for="champ13">
+                <input type="checkbox" name="champion" id="champ13" value="Blitzcrank">Blitzcrank
+            </label>
+            <label class="champion-label" for="champ14">
+                <input type="checkbox" name="champion" id="champ14" value="Brand">Brand
+            </label>
+            <label class="champion-label" for="champ15">
+                <input type="checkbox" name="champion" id="champ15" value="Braum">Braum
+            </label>
+            <label class="champion-label" for="champ16">
+                <input type="checkbox" name="champion" id="champ16" value="Caitlyn">Caitlyn
+            </label>
+            <label class="champion-label" for="champ17">
+                <input type="checkbox" name="champion" id="champ17" value="Camille">Camille
+            </label>
+            <label class="champion-label" for="champ18">
+                <input type="checkbox" name="champion" id="champ18" value="Cassiopeia">Cassiopeia
+            </label>
+            <label class="champion-label" for="champ19">
+                <input type="checkbox" name="champion" id="champ19" value="Cho'Gath">Cho'Gath
+            </label>
+            <label class="champion-label" for="champ20">
+                <input type="checkbox" name="champion" id="champ20" value="Corki">Corki
+            </label>
+            <label class="champion-label" for="champ21">
+                <input type="checkbox" name="champion" id="champ21" value="Darius">Darius
+            </label>
+            <label class="champion-label" for="champ22">
+                <input type="checkbox" name="champion" id="champ22" value="Diana">Diana
+            </label>
+            <label class="champion-label" for="champ23">
+                <input type="checkbox" name="champion" id="champ23" value="Dr. Mundo">Dr. Mundo
+            </label>
+            <label class="champion-label" for="champ24">
+                <input type="checkbox" name="champion" id="champ24" value="Draven">Draven
+            </label>
+            <label class="champion-label" for="champ25">
+                <input type="checkbox" name="champion" id="champ25" value="Ekko">Ekko
+            </label>
+            <label class="champion-label" for="champ26">
+                <input type="checkbox" name="champion" id="champ26" value="Elise">Elise
+            </label>
+            <label class="champion-label" for="champ27">
+                <input type="checkbox" name="champion" id="champ27" value="Evelynn">Evelynn
+            </label>
+            <label class="champion-label" for="champ28">
+                <input type="checkbox" name="champion" id="champ28" value="Ezreal">Ezreal
+            </label>
+            <label class="champion-label" for="champ29">
+                <input type="checkbox" name="champion" id="champ29" value="Fiddlesticks">Fiddlesticks
+            </label>
+            <label class="champion-label" for="champ30">
+                <input type="checkbox" name="champion" id="champ30" value="Fiora">Fiora
+            </label>
+        </fieldset>
+        <br>
+        <pre>
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡤⠶⠾⠻⠛⠉⠀⠉⠘⠁⠙⠟⠫⠿⠶⣦⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⡲⠽⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠉⣩⡿⣿⡖⠢⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠞⠁⡠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠦⢀⠵⢱⡵⡷⣶⠛⠦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠯⠀⠀⠰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢄⠀⡇⠈⠈⡆⠀⠈⠢⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡏⠓⠀⠀⣠⠣⠳⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⢃⠀⠀⠀⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣼⠓⠀⠀⠀⠀⡉⠀⠀⠂⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢂⡀⠀⠀⠂⢸⢂⠀⠀⠀⠀⠓⡆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⠀⠀⢀⠃⠀⢀⢂⣴⣷⣮⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣶⣼⠒⡉⠂⠀⠀⠀⠀⠀⠀⠈⠨⢧⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⡞⠂⠀⠀⠀⠀⠀⢘⠁⠀⠀⣸⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣾⣿⣿⣿⡇⠀⠀⠈⡄⠀⠀⠀⠀⠀⠀⠣⢣⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⠟⠂⠀⠀⠀⠐⠢⠀⢸⠀⠀⠀⠸⣿⣿⡿⠁⠀⠀⠀⠰⢂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡁⠺⣿⣿⡿⠡⠀⠁⠠⡇⠀⠀⠀⠀⠀⠀⢐⠁⢳⡀⠀⠀⠀
+⠀⠀⠀⣴⠇⠀⠂⠀⠀⠀⠀⠀⠀⢹⡃⠄⢮⢦⣼⣿⣦⠂⠀⠀⠀⠀⠻⠾⠾⠛⠷⣶⠟⠀⠀⠀⠀⠑⢠⣟⣻⣦⡄⠄⠀⣲⣍⢀⠀⠀⠀⠀⠀⠈⠠⢊⠽⡆⠀⠀
+⠀⠀⡼⡵⠁⠀⠀⠀⠀⠀⠀⠀⠀⠃⣿⡠⢐⣌⡻⡿⠟⠁⠀⠀⠀⠀⠀⠀⠠⠠⠀⠀⠀⠀⠀⠀⠀⠘⢙⡟⣿⢯⣠⣭⢴⣿⡯⠀⠆⠀⠀⠀⠀⠀⠀⢣⠑⣼⡆⠀
+⠀⣼⣡⠃⡄⠀⠀⠀⠀⠀⠀⠰⢦⢩⠛⠿⣿⣲⣾⣷⣬⣄⡁⠠⣀⠀⠀⠀⠀⠀⠀⠀⠠⠄⢀⠤⠀⢄⢲⣻⣿⣿⣿⠿⠟⠁⣿⡆⠀⠀⠀⠀⠀⠀⠀⠁⠆⠫⢽⡀
+⢠⣷⡁⢲⠁⠀⠀⠀⠀⠀⠀⣐⢌⠺⠀⠀⠈⢉⣻⡿⠿⣿⡷⠷⠾⠷⠿⠦⠴⡴⠴⠮⠴⠤⢷⣶⣦⣿⣿⠿⠿⢯⢥⡀⠀⠀⠹⡗⠐⠀⠀⠀⠀⠀⠀⠀⠂⡖⠘⡇
+⢸⣧⢃⠡⠆⡄⠀⠀⠀⢀⢀⠜⣼⡮⠀⣠⡶⠋⠀⠀⠀⡎⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠨⢅⠀⠀⠁⠁⠻⣷⠀⠀⣿⡆⢀⠀⠀⠀⠀⠀⠈⠀⢿⣁⡗
+⠀⢻⣆⠠⢀⠀⠀⠀⢄⠀⢀⣠⡿⠁⠸⡏⡀⠀⠀⠀⢰⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣣⣔⣞⣀⠐⠁⣆⣀⣿⠃⠀⠘⢷⡆⠀⠀⠀⠀⠀⡀⡟⣟⣾⠁
+⠀⠀⠙⢷⡤⢅⣀⣀⣀⣠⠿⠋⠀⠀⠀⠻⣵⣄⣶⢤⡞⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢼⣎⣿⣻⠿⠿⠋⠁⠀⠀⠀⠈⠻⣧⣄⠀⠀⠰⢣⣧⡟⠁⠀
+⠀⠀⠀⠀⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⣴⠟⠁⠀⠢⡠⠳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠴⠉⠉⠩⣿⣦⣄⠤⠀⠀⠀⠀⠀⠀⠈⠓⠻⠾⠝⠛⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢼⣳⠁⠀⠀⠀⠈⠀⠹⡦⠀⠀⠀⠀⠀⠀⠀⠀⣴⡏⠀⠀⠀⠠⠖⢿⣟⠌⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⠈⠂⠀⠀⠀⠀⣤⣜⡅⢄⡐⢄⠠⡄⣠⣼⠻⠆⠀⠀⠀⠼⣸⣾⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠞⠷⣤⣤⣀⣀⣶⠿⠋⠉⠉⠉⠛⠋⠁⠙⠻⣷⣤⠀⢀⣠⣖⣾⠿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+        <!-- LGBT Flag -->
+        <div class="lgbt-flag"></div>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
